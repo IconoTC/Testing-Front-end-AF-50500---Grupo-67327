@@ -14,6 +14,10 @@ export default [
       "no-unused-vars": "warn",
       "no-undef": "warn",
       "@typescript-eslint/no-unused-vars": "off"
+    },
+    env: {
+      "jest/globals": true,
+      "commonjs": true
     }
-  },
+  }
 ];
