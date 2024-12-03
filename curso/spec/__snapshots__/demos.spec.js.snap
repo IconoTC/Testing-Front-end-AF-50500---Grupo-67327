@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ejemplos del curso Objeto Persona OK Instantánea 1`] = `
+Persona {
+  "apellidos": "Grillo",
+  "edad": 44,
+  "id": 1,
+  "nombre": "Pepito",
+  "nombreCompleto": [Function],
+}
+`;

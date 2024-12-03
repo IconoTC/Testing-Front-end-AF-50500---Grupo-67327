@@ -16,6 +16,7 @@ function Persona(id, nombre, apellidos) {
     this.id = id
     this.nombre = nombre
     this.apellidos = apellidos
+    this.edad = 44
     this.nombreCompleto = () => this.nombre + ' ' + this.apellidos
 }
 

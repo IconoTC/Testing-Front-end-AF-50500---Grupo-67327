@@ -12,6 +12,17 @@ describe('Ejemplos del curso', () => {
                 const actual = suma(0.1, 0.2)
                 expect(actual).toBe(0.3)
             });
+            // it.each([
+            //     [1, 3, 4], [-1, 2, 1], [1, -2, -1], [0.1, 0.2, 0.3]
+            // ])('.suma(%i, %i)', (a, b, expected) => {
+            //     expect(suma(a, b)).toBe(expected);
+            // }));
+
+            // [[1, 3, 4], [-1, 2, 1], [1, -2, -1], [0.1, 0.2, 0.3]].forEach(
+            //     (a, b, expected) => it(`suma(${a}, ${b})`, () => {
+            //     expect(suma(a, b)).toBe(expected);
+            // }));
+
         });
         describe('KO', () => {
             it('Suma cadena numérica con numero', () => {
@@ -27,9 +38,9 @@ describe('Ejemplos del curso', () => {
             it('Suma un solo numero', () => {
                 expect(() => suma(2)).toThrow("No es un resultado numérico")
             });
-   
+
         });
-            
+
     });
     describe('Función Divide', () => {
         describe('OK', () => {
@@ -53,9 +64,9 @@ describe('Ejemplos del curso', () => {
                 expect(divide("kk", 2)).not.toBeNaN()
                 expect(divide(2, "kk")).toBeNaN()
             });
-   
+
         });
-            
+
     });
     describe('Objeto Persona', () => {
         describe('OK', () => {
@@ -64,17 +75,43 @@ describe('Ejemplos del curso', () => {
 
                 expect(actual).toBeDefined()
                 expect(actual).toBeInstanceOf(Persona)
-                expect(actual).toMatchObject({id: 1, nombre: "Pepito", apellidos: "Grillo"})
+                expect(actual).toMatchObject({ id: 1, nombre: "Pepito", apellidos: "Grillo" })
                 // expect(actual.id).toBe(1)
                 // expect(actual.nombre).toBe("Pepito")
                 // expect(actual.apellidos).toBe("Grillo")
             });
-            it('Método nombreCompleto', () => {
-                const persona = new Persona(1, "Pepito", "Grillo")
+            it('Instantánea', () => {
+                const actual = new Persona(1, "Pepito", "Grillo")
 
-                const actual = persona.nombreCompleto()
+                expect(actual).toMatchSnapshot()
+            });
+            it('Instantánea en linea', () => {
+                const actual = new Persona(1, "Pepito", "Grillo")
 
-                expect(actual).toBe("Pepito Grillo")
+                expect(actual).toMatchInlineSnapshot(`
+Persona {
+  "apellidos": "Grillo",
+  "edad": 44,
+  "id": 1,
+  "nombre": "Pepito",
+  "nombreCompleto": [Function],
+}
+`)
+            });
+            describe('Pruebas de los métodos', () => {
+                let persona;
+                beforeEach(() => {
+                    persona = new Persona(1, "Pepito", "Grillo")
+
+                })
+                it('Método nombreCompleto', () => {
+                    // const persona = new Persona(1, "Pepito", "Grillo")
+
+                    const actual = persona.nombreCompleto()
+
+                    expect(actual).toBe("Pepito Grillo")
+                });
+                it.todo('probar sin nombre')
             });
         });
         describe('KO', () => {
@@ -85,8 +122,8 @@ describe('Ejemplos del curso', () => {
                 expect(divide("kk", 2)).not.toBeNaN()
                 expect(divide(2, "kk")).toBeNaN()
             });
-   
+
         });
-            
+
     });
 });
