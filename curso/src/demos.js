@@ -12,5 +12,13 @@ function divide(a, b) {
     return +result.toPrecision(15);
 }
 
+function Persona(id, nombre, apellidos) {
+    this.id = id
+    this.nombre = nombre
+    this.apellidos = apellidos
+    this.nombreCompleto = () => this.nombre + ' ' + this.apellidos
+}
+
 module.exports.suma=suma
 module.exports.divide=divide
+module.exports.Persona=Persona
