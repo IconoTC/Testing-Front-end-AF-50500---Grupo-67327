@@ -20,6 +20,4 @@ function Persona(id, nombre, apellidos) {
     this.nombreCompleto = () => this.nombre + ' ' + this.apellidos
 }
 
-module.exports.suma=suma
-module.exports.divide=divide
-module.exports.Persona=Persona
+module.exports = { suma, divide, Persona }
