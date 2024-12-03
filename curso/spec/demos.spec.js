@@ -12,17 +12,19 @@ describe('Ejemplos del curso', () => {
                 const actual = suma(0.1, 0.2)
                 expect(actual).toBe(0.3)
             });
-            // it.each([
-            //     [1, 3, 4], [-1, 2, 1], [1, -2, -1], [0.1, 0.2, 0.3]
-            // ])('.suma(%i, %i)', (a, b, expected) => {
-            //     expect(suma(a, b)).toBe(expected);
-            // }));
-
-            // [[1, 3, 4], [-1, 2, 1], [1, -2, -1], [0.1, 0.2, 0.3]].forEach(
-            //     (a, b, expected) => it(`suma(${a}, ${b})`, () => {
-            //     expect(suma(a, b)).toBe(expected);
-            // }));
-
+            it.each([
+                [1, 3, 4], [-1, 2, 1], [1, -2, -1], [0.1, 0.2, 0.3]
+            ])('suma(%i, %i)', (a, b, expected) => {
+                expect(suma(a, b)).toBe(expected);
+            });
+            it.each([
+                {a: 1, b: 3, expected: 4}, 
+                {a: -1, b: 2, expected: 1}, 
+                {a: 1, b: -2, expected: -1}, 
+                {a: 0.1, b: 0.2, expected: 0.3}, 
+            ])('$a + $b = $expected', ({a, b, expected}) => {
+                expect(suma(a, b)).toBe(expected);
+            });
         });
         describe('KO', () => {
             it('Suma cadena numérica con numero', () => {
