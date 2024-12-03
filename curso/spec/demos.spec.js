@@ -1,4 +1,4 @@
-const { suma, divide } = require('../src/demos.js')
+const { suma, divide, Persona } = require('../src/demos.js')
 
 describe('Ejemplos del curso', () => {
     describe('Función Suma', () => {
@@ -43,6 +43,38 @@ describe('Ejemplos del curso', () => {
 
                 //expect(actual).toBe(0.3)
                 expect(actual).toBeCloseTo(0.3333, 4)
+            });
+        });
+        describe('KO', () => {
+            it('Divide por 0', () => {
+                expect(() => divide(1, 0)).toThrow("No es un resultado numérico")
+            });
+            it.skip('Divide cadena numérica por numero', () => {
+                expect(divide("kk", 2)).not.toBeNaN()
+                expect(divide(2, "kk")).toBeNaN()
+            });
+   
+        });
+            
+    });
+    describe('Objeto Persona', () => {
+        describe('OK', () => {
+            it('Constructor', () => {
+                const actual = new Persona(1, "Pepito", "Grillo")
+
+                expect(actual).toBeDefined()
+                expect(actual).toBeInstanceOf(Persona)
+                expect(actual).toMatchObject({id: 1, nombre: "Pepito", apellidos: "Grillo"})
+                // expect(actual.id).toBe(1)
+                // expect(actual.nombre).toBe("Pepito")
+                // expect(actual.apellidos).toBe("Grillo")
+            });
+            it('Método nombreCompleto', () => {
+                const persona = new Persona(1, "Pepito", "Grillo")
+
+                const actual = persona.nombreCompleto()
+
+                expect(actual).toBe("Pepito Grillo")
             });
         });
         describe('KO', () => {
