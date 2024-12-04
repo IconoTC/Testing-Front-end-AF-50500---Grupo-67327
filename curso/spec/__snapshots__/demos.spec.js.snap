@@ -3,7 +3,8 @@
 exports[`Ejemplos del curso Objeto Persona OK Instantánea 1`] = `
 Persona {
   "apellidos": "Grillo",
-  "edad": 44,
+  "cumpleaños": [Function],
+  "edad": 0,
   "id": 1,
   "nombre": "Pepito",
   "nombreCompleto": [Function],

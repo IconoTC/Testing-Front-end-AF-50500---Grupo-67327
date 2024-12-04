@@ -1,4 +1,4 @@
-const { suma, divide, Persona } = require('../src/demos.js')
+const { suma, divide, Persona, Calculadora } = require('../src/demos.js')
 
 describe('Ejemplos del curso', () => {
     describe('Función Suma', () => {
@@ -93,7 +93,8 @@ describe('Ejemplos del curso', () => {
                 expect(actual).toMatchInlineSnapshot(`
 Persona {
   "apellidos": "Grillo",
-  "edad": 44,
+  "cumpleaños": [Function],
+  "edad": 0,
   "id": 1,
   "nombre": "Pepito",
   "nombreCompleto": [Function],

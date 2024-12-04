@@ -18,6 +18,6 @@
     "typescript-eslint": "^8.16.0"
   },
   "jest": {
-    "displayName": "Curso de Pruebas", "roots": ["./src/", "./spec/"]
+    "displayName": "Curso de Pruebas", "roots": ["./src/", "./spec/", "./public/javascripts"]
   }
 }

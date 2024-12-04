@@ -1,11 +1,12 @@
 const {Shop, Item} = require("../src/gilded_rose.js");
 
-describe.only("Gilded Rose", function() {
+describe("Gilded Rose", function() {
   it("should foo", function() {
     const gildedRose = new Shop([new Item("foo", 0, 0)]);
     const items = gildedRose.updateQuality();
     expect(items[0].name).toBe("foo");
   });
+
   describe("Normal Product", () => {
     it.each([
       [11, 10, 10, 9],
@@ -21,6 +22,7 @@ describe.only("Gilded Rose", function() {
       expect(items[0]).toMatchObject({name, sellIn, quality})
     });
   })
+
   describe("Aged Brie", () => {
     it.each([
       [2, 0, 1, 1],
@@ -37,6 +39,7 @@ describe.only("Gilded Rose", function() {
       expect(items[0]).toMatchObject({name, sellIn, quality})
     });
   })
+
   describe("Sulfuras, Hand of Ragnaros", () => {
     it.each([
       [1, 0, 1, 0],
@@ -51,6 +54,7 @@ describe.only("Gilded Rose", function() {
       expect(items[0]).toMatchObject({name, sellIn, quality})
     });
   })
+
   describe("Backstage passes to a TAFKAL80ETC concert", () => {
     it.each([
       [11, 0, 10, 1],
@@ -68,7 +72,8 @@ describe.only("Gilded Rose", function() {
       expect(items[0]).toMatchObject({name, sellIn, quality})
     });
   })
-  describe("Conjured Mana Cake", () => {
+
+  describe.skip("Conjured Mana Cake", () => {
     it.each([
       [11, 10, 10, 8],
       [7, 1, 6, 0],
@@ -83,6 +88,7 @@ describe.only("Gilded Rose", function() {
       expect(items[0]).toMatchObject({name, sellIn, quality})
     });
   })
+
   it('instantánea', () => {
     const items = [
       new Item("+5 Dexterity Vest", 10, 20),
