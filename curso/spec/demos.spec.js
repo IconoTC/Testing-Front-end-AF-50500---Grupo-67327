@@ -176,7 +176,7 @@ describe.skip('Demos Mock', () => {
     })
 })
 
-describe.only('Integración: DOM', () => {
+describe('Integración: DOM', () => {
     it('Componente', () => {
         function inc() {
             const o = document.getElementById('txt')

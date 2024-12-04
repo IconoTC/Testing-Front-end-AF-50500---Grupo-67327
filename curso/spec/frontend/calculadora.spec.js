@@ -1,6 +1,6 @@
 const { Calculadora } = require('../../public/javascripts/calculadora')
 
-describe.skip('Pruebas de la calculadora', () => {
+describe('Pruebas de la calculadora', () => {
 	let pantalla, pantallaHasCalled = false;
 	let resumen, resumenHasCalled = false;
 	
