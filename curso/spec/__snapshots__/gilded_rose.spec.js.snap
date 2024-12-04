@@ -45,6 +45,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 50,
         "sellIn": 4,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 4,
+        "sellIn": 2,
+      },
     ],
   },
   {
@@ -89,6 +94,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 50,
         "sellIn": 3,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 2,
+        "sellIn": 1,
       },
     ],
   },
@@ -135,6 +145,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 50,
         "sellIn": 2,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": 0,
+      },
     ],
   },
   {
@@ -179,6 +194,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 50,
         "sellIn": 1,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -1,
       },
     ],
   },
@@ -225,6 +245,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 50,
         "sellIn": 0,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -2,
+      },
     ],
   },
   {
@@ -269,6 +294,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -1,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -3,
       },
     ],
   },
@@ -315,6 +345,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -2,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -4,
+      },
     ],
   },
   {
@@ -359,6 +394,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -3,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -5,
       },
     ],
   },
@@ -405,6 +445,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -4,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -6,
+      },
     ],
   },
   {
@@ -449,6 +494,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -5,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -7,
       },
     ],
   },
@@ -495,6 +545,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -6,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -8,
+      },
     ],
   },
   {
@@ -539,6 +594,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -7,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -9,
       },
     ],
   },
@@ -585,6 +645,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -8,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -10,
+      },
     ],
   },
   {
@@ -629,6 +694,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -9,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -11,
       },
     ],
   },
@@ -675,6 +745,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -10,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -12,
+      },
     ],
   },
   {
@@ -719,6 +794,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -11,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -13,
       },
     ],
   },
@@ -765,6 +845,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -12,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -14,
+      },
     ],
   },
   {
@@ -809,6 +894,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -13,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -15,
       },
     ],
   },
@@ -855,6 +945,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -14,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -16,
+      },
     ],
   },
   {
@@ -899,6 +994,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -15,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -17,
       },
     ],
   },
@@ -945,6 +1045,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -16,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -18,
+      },
     ],
   },
   {
@@ -989,6 +1094,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -17,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -19,
       },
     ],
   },
@@ -1035,6 +1145,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -18,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -20,
+      },
     ],
   },
   {
@@ -1079,6 +1194,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -19,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -21,
       },
     ],
   },
@@ -1125,6 +1245,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -20,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -22,
+      },
     ],
   },
   {
@@ -1169,6 +1294,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -21,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -23,
       },
     ],
   },
@@ -1215,6 +1345,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -22,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -24,
+      },
     ],
   },
   {
@@ -1259,6 +1394,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -23,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -25,
       },
     ],
   },
@@ -1305,6 +1445,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -24,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -26,
+      },
     ],
   },
   {
@@ -1350,6 +1495,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "quality": 0,
         "sellIn": -25,
       },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -27,
+      },
     ],
   },
   {
@@ -1394,6 +1544,11 @@ exports[`Gilded Rose instantánea 1`] = `
         "name": "Backstage passes to a TAFKAL80ETC concert",
         "quality": 0,
         "sellIn": -26,
+      },
+      {
+        "name": "Conjured Mana Cake",
+        "quality": 0,
+        "sellIn": -28,
       },
     ],
   },

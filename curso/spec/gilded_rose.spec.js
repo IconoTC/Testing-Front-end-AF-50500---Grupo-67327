@@ -73,7 +73,7 @@ describe("Gilded Rose", function() {
     });
   })
 
-  describe.skip("Conjured Mana Cake", () => {
+  describe("Conjured Mana Cake", () => {
     it.each([
       [11, 10, 10, 8],
       [7, 1, 6, 0],
@@ -101,7 +101,7 @@ describe("Gilded Rose", function() {
       new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
     
       // This Conjured item does not work properly yet
-      //new Item("Conjured Mana Cake", 3, 6),
+      new Item("Conjured Mana Cake", 3, 6),
     ];
     
     const days = 30;

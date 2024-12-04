@@ -1,5 +1,5 @@
 class Item {
-  constructor(name, sellIn, quality){
+  constructor(name, sellIn, quality) {
     this.name = name;
     this.sellIn = sellIn;
     this.quality = quality;
@@ -7,7 +7,7 @@ class Item {
 }
 
 class Shop {
-  constructor(items=[]){
+  constructor(items = []) {
     this.items = items;
   }
   updateQuality() {
@@ -15,6 +15,9 @@ class Shop {
       if (this.items[i].name != 'Aged Brie' && this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
         if (this.items[i].quality > 0) {
           if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
+            if (this.items[i].quality > 1 && this.items[i].name == 'Conjured Mana Cake') {
+              this.items[i].quality = this.items[i].quality - 1;
+            }
             this.items[i].quality = this.items[i].quality - 1;
           }
         }
@@ -43,6 +46,9 @@ class Shop {
           if (this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
             if (this.items[i].quality > 0) {
               if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
+                if (this.items[i].quality > 1 && this.items[i].name == 'Conjured Mana Cake') {
+                  this.items[i].quality = this.items[i].quality - 1;
+                }
                 this.items[i].quality = this.items[i].quality - 1;
               }
             }

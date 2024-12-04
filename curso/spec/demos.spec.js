@@ -18,11 +18,11 @@ describe('Ejemplos del curso', () => {
                 expect(suma(a, b)).toBe(expected);
             });
             it.each([
-                {a: 1, b: 3, expected: 4}, 
-                {a: -1, b: 2, expected: 1}, 
-                {a: 1, b: -2, expected: -1}, 
-                {a: 0.1, b: 0.2, expected: 0.3}, 
-            ])('$a + $b = $expected', ({a, b, expected}) => {
+                { a: 1, b: 3, expected: 4 },
+                { a: -1, b: 2, expected: 1 },
+                { a: 1, b: -2, expected: -1 },
+                { a: 0.1, b: 0.2, expected: 0.3 },
+            ])('$a + $b = $expected', ({ a, b, expected }) => {
                 expect(suma(a, b)).toBe(expected);
             });
         });
@@ -115,6 +115,27 @@ Persona {
                     expect(actual).toBe("Pepito Grillo")
                 });
                 it.todo('probar sin nombre')
+                it('Unitaria: Método cumpleaños', () => {
+                    const c = new Calculadora()
+                    const calc = jest.spyOn(c, 'suma')
+                    calc.mockReturnValue(34)
+                    const persona = new Persona(1, "Pepito", "Grillo", 33, c)
+
+                    persona.cumpleaños()
+
+                    expect(persona.edad).toBe(34)
+                    expect(calc).toHaveBeenCalledTimes(1)
+                });
+                it.only('Integración: Método cumpleaños', () => {
+                    const out = jest.spyOn(console, 'log')
+                    out.mockImplementation(() => {})
+                    const persona = new Persona(1, "Pepito", "Grillo", 33)
+
+                    persona.cumpleaños()
+
+                    expect(persona.edad).toBe(34)
+                    expect(out).toHaveBeenCalledTimes(1)
+                });
             });
         });
         describe('KO', () => {
@@ -130,3 +151,27 @@ Persona {
 
     });
 });
+
+describe.skip('Demos Mock', () => {
+    it('function', () => {
+        // const resta = jest.fn()
+        // resta.mockReturnValueOnce(3).mockReturnValueOnce(0).mockReturnValueOnce(-2).mockReturnValueOnce(0.1).mockReturnValue(0)
+        const resta = (a, b) => +(a - b).toPrecision(15)
+
+        let actual = resta(4, 1)
+
+        expect(actual).toBe(3)
+        expect(resta(2, 2)).toBe(0)
+        expect(resta(10, 12)).toBe(-2)
+        expect(resta(1, 0.9)).toBe(0.1)
+    })
+    it('spy', () => {
+        const c = new Calculadora()
+        const calc = jest.spyOn(c, 'suma')
+        calc.mockReturnValue(4)
+
+        let actual = c.suma(3, 3)
+
+        expect(actual).toBe(4)
+    })
+})

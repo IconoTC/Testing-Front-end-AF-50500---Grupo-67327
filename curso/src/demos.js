@@ -18,6 +18,7 @@ class Calculadora {
         const result = +a + +b
         if(isNaN(result))
             throw new Error("No es un resultado numérico valido")
+        console.log(`------------------> ${result}`)
         return +result.toPrecision(15);
     }
     divide(a, b) {
