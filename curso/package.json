@@ -16,9 +16,16 @@
     "eslint": "^9.16.0",
     "globals": "^15.13.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "typescript-eslint": "^8.16.0"
   },
   "jest": {
-    "displayName": "Curso de Pruebas", "roots": ["./src/", "./spec/", "./public/javascripts"]
+    "displayName": "Curso de Pruebas",
+    "roots": [
+      "./src/",
+      "./spec/",
+      "./public/javascripts"
+    ],
+    "testEnvironment": "jsdom"
   }
 }

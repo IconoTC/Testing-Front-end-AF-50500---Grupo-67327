@@ -126,7 +126,7 @@ Persona {
                     expect(persona.edad).toBe(34)
                     expect(calc).toHaveBeenCalledTimes(1)
                 });
-                it.only('Integración: Método cumpleaños', () => {
+                it('Integración: Método cumpleaños', () => {
                     const out = jest.spyOn(console, 'log')
                     out.mockImplementation(() => {})
                     const persona = new Persona(1, "Pepito", "Grillo", 33)
@@ -173,5 +173,29 @@ describe.skip('Demos Mock', () => {
         let actual = c.suma(3, 3)
 
         expect(actual).toBe(4)
+    })
+})
+
+describe.only('Integración: DOM', () => {
+    it('Componente', () => {
+        function inc() {
+            const o = document.getElementById('txt')
+            o.textContent = +o.textContent + 1
+        }
+
+        document.body.innerHTML = `
+            <div>
+                <output id="txt">10</output>
+                <input type="button" id="btn" >
+            </div>
+        `
+        const out = document.getElementById('txt')
+        const btn = document.getElementById('btn')
+        btn.addEventListener('click', inc)
+
+        btn.click()
+
+        expect(out.textContent).toBe('11')
+
     })
 })
