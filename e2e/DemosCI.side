@@ -1,7 +1,7 @@
 {
   "id": "3f760e82-4b2c-41f7-bd9b-3176cce02618",
   "version": "2.0",
-  "name": "Demos",
+  "name": "DemosCI",
   "url": "http://host.docker.internal:8181",
   "tests": [{
     "id": "d5d039e7-a2c5-4278-b004-939c098fa1bc",
@@ -491,39 +491,6 @@
       ],
       "value": ""
     }, {
-      "id": "eb01cdeb-c370-4b93-8965-cb4d6d1bb0ad",
-      "comment": "",
-      "command": "mouseDownAt",
-      "target": "css=.btnOperar:nth-child(9)",
-      "targets": [
-        ["css=.btnOperar:nth-child(9)", "css:finder"],
-        ["xpath=//input[@value='-']", "xpath:attributes"],
-        ["xpath=//input[7]", "xpath:position"]
-      ],
-      "value": "97.75,25"
-    }, {
-      "id": "b5fee657-3731-4d3e-aa10-1912bfa76f6d",
-      "comment": "",
-      "command": "mouseMoveAt",
-      "target": "css=.btnOperar:nth-child(9)",
-      "targets": [
-        ["css=.btnOperar:nth-child(9)", "css:finder"],
-        ["xpath=//input[@value='-']", "xpath:attributes"],
-        ["xpath=//input[7]", "xpath:position"]
-      ],
-      "value": "97.75,25"
-    }, {
-      "id": "39db8e74-bed7-41b8-8b52-ba9870942fb2",
-      "comment": "",
-      "command": "mouseUpAt",
-      "target": "css=.btnOperar:nth-child(9)",
-      "targets": [
-        ["css=.btnOperar:nth-child(9)", "css:finder"],
-        ["xpath=//input[@value='-']", "xpath:attributes"],
-        ["xpath=//input[7]", "xpath:position"]
-      ],
-      "value": "97.75,25"
-    }, {
       "id": "c376882f-4a99-4570-8476-5abfa29643c9",
       "comment": "",
       "command": "click",
@@ -546,13 +513,6 @@
         ["xpath=//output[2]", "xpath:position"]
       ],
       "value": "3"
-    }, {
-      "id": "a7dfef27-1e73-493a-baf6-67b522b53a4d",
-      "comment": "",
-      "command": "verifyTitle",
-      "target": "Calculadora",
-      "targets": [],
-      "value": ""
     }, {
       "id": "c67d5ed8-8bf0-482b-a9e5-5f85d8331cd4",
       "comment": "",
@@ -577,7 +537,7 @@
       "value": ""
     }, {
       "id": "93e84f56-d6d7-474b-bb28-a1c9ead4ff42",
-      "comment": "",
+      "comment": "multiplica",
       "command": "assertText",
       "target": "id=txtPantalla",
       "targets": [
@@ -693,13 +653,6 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["e7d7bb3d-a3f3-4356-95ec-862106f3ae5f"]
-  }, {
-    "id": "c8a7f413-74fe-4645-b29c-0e1a1b87c9a7",
-    "name": "Todas",
-    "persistSession": false,
-    "parallel": false,
-    "timeout": 300,
-    "tests": ["d5d039e7-a2c5-4278-b004-939c098fa1bc", "e7d7bb3d-a3f3-4356-95ec-862106f3ae5f"]
   }],
   "urls": ["http://host.docker.internal:8181/"],
   "plugins": []
