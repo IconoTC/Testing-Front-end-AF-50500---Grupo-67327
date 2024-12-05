@@ -52,9 +52,21 @@
 
 ### Contenedores
 
+#### NodeJS
+
+    docker run --rm -v .:/proyecto node:lts-alpine sh -c "cd /proyecto && npm test"
+
 #### SonarQube
 
     docker run -d --name sonarqube --publish 9000:9000 sonarqube:latest
+
+#### SonarQube Scanner
+
+    docker run --rm -v .:/usr/src -e SONAR_HOST_URL="http://host.docker.internal:9000"  sonarsource/sonar-scanner-cli
+
+#### Selenium Grid
+
+    cd docker\selenium && docker compose up -d
 
 ## Repositorios
 

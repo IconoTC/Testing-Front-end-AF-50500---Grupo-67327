@@ -7,7 +7,8 @@
     "test": "jest --collectCoverage",
     "test:update": "jest --updateSnapshot",
     "test:mutacion": "stryker run",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sonar": "sonar-scanner -Dsonar.projectKey=Curso -Dsonar.sources=./src,./public/javascripts -Dsonar.tests=./spec -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_615fbcf059bf104575ecefc1fd21ed35cd5a2b4d"
   },
   "author": "",
   "license": "ISC",
