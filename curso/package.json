@@ -8,7 +8,7 @@
     "test:update": "jest --updateSnapshot",
     "test:mutacion": "stryker run",
     "lint": "eslint",
-    "sonar": "sonar-scanner -Dsonar.projectKey=Curso -Dsonar.sources=./src,./public/javascripts -Dsonar.tests=./spec -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_615fbcf059bf104575ecefc1fd21ed35cd5a2b4d"
+    "sonar": "sonar-scanner -Dsonar.projectKey=curso -Dsonar.sources=./src,./public/javascripts -Dsonar.tests=./spec -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_af9f3d00dd68c39c12ef0a4590d5772b6db662f8"
   },
   "author": "",
   "license": "ISC",
